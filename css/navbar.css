@@ -1,0 +1,36 @@
+header {
+    /* sticky header*/
+    background: #55d6aa;
+    top: 0;
+    position: sticky;
+  }
+  
+  .navContainer {
+    /* centering */
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  nav ul {
+    /* get rid of bullet points and default spacing */
+    list-style: none;
+  }
+  
+  nav li {
+    /* display list items horizontally not vertically */
+    display: inline-block;
+  }
+  
+  nav a {
+    /* styling the navigation links */
+    margin: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    font-family: "Playfair Display";
+  }
+  
+  nav a:hover {
+    color: blue;
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Life During The Pandemic - Contact Me</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navContainer">
+        <nav>
+          <ul>
+            <li>
+              <a href="main.html"
+                ><span class="material-icons">home</span>Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html"
+                ><span class="material-icons">face</span>About Me</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><span class="material-icons">email</span>Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <h1>Contact Me</h1>
+      <div class="socialsContainer">
+        <a href="https://github.com/yosephAHMED">
+          <img src="assets/GitHub-Mark-64px.png" alt="My GitHub"
+        /></a>
+        <a href="https://www.linkedin.com/in/yoseph-ahmed/">
+          <img
+            src="assets/linked-in.png"
+            alt="My LinkedIn"
+            width="64px"
+            height="64px"
+        /></a>
+      </div>
+      <form action="contactHandler.html" method="GET">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstName"
+          placeholder="Your name.."
+          minlength="1"
+          required
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastName"
+          placeholder="Your last name..."
+        />
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="emailAddress"
+          placeholder="Your email address..."
+          minlength="3"
+          required
+        />
+
+        <label for="reason">Contact Reason</label>
+        <select id="reason" name="reason">
+          <option value="business" selected>General question</option>
+          <option value="general">Business related</option>
+          <option value="feedback">Leave feedback</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write your message here..."
+          style="height: 200px"
+          required
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
